@@ -25,6 +25,12 @@ body {
   align-items: center;
 }
 
+.home-container h1 {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 3em;
+}
+
 .search-container {
   display: flex;
   justify-content: center;
@@ -75,7 +81,19 @@ body {
 }
 
 .header {
-  font-size: 45px;
   color: #fff;
   font-weight: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(252, 90, 44, 0.89);
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar .search-container {
+  flex-direction: row;
 }

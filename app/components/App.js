@@ -5,8 +5,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="container" >
-        <div style={{backgroundColor: 'pink'}} >
-          <h1> Header Component to go here</h1>
+        <div className="navbar" >
+          <h1> Weather Man ☃️</h1>
+          <Search />
         </div>
 
         <div className="home-container" style={{backgroundImage: "url('app/images/pattern.svg')"}}>
