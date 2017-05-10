@@ -1,6 +1,5 @@
 var React = require('react');
 var PropTypes = require('prop-types');
-var api = require('../utils/api');
 var ReactRouter = require('react-router-dom');
 
 class Search extends React.Component {
@@ -16,16 +15,12 @@ class Search extends React.Component {
   };
 
   handleSubmitLocation() {
-    // api.getCurrentWeather(this.state.location)
-    //   .then(function(res) {
-    //     console.log(res);
-    //   })
 
     this.props.onSubmitLocation(this.state.location)
 
     this.setState( function() {
       return {
-        zipcode: ''
+        location: ''
       }
     })
   }
